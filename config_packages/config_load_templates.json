@@ -1,0 +1,61 @@
+{
+  "packageName": "CONFIG_LOAD_TEMPLATES",
+  "packageVersion": "${build_number}",
+  "templateVersion": "1.1",
+  "dataPackage": {
+      "packageId": "4e076c11-033e-429b-88d5-986e76e92e88",
+      "packageName": "CONFIG_LOAD_TEMPLATES",
+      "packageVersion": "${build_number}",
+      "createdUser": "SYSTEM",
+      "packageStatus": "UNDER_CONSTRUCTION",
+      "createdTimestamp": 1703233714822,
+      "modifiedTimestamp": 1704371379433,
+      "modifiedUser": "taha.gad@agiledataengine.com",
+      "statusChangedTimestamp": 1703233714822,
+      "statusChangedUser": "SYSTEM",
+      "deleted": false,
+      "description": "#System",
+      "packageType": "CONFIG_PACKAGE"
+  },
+  "packageDependencies": [
+      {
+          "packageId": "6d7d342f-158b-4608-9835-6fa6ea4a9ec0",
+          "packageName": "CONFIG_BASE",
+          "packageType": "CONFIG_PACKAGE",
+          "dagLevel": 1
+      },
+      {
+          "packageId": "8e5ee108-df82-4f67-acbd-cbbe2d33e705",
+          "packageName": "CONFIG_ENTITY_DEFAULTS",
+          "packageType": "CONFIG_PACKAGE",
+          "dagLevel": 1
+      }
+  ],
+  "entityLoadLogicTemplates": [
+      {
+          "entityLoadLogicTemplateId": "bca3609d-6b27-4484-ac2c-d95659b09682",
+          "templateName": "PSA_HISTORIZED_BY_DATAHASH_AS_INSERT",
+          "templateDescription": "Sets OPT_HISTORIZED_BY_DATAHASH_AS_INSERT true by default for the PSA entity type."
+      }
+  ],
+  "entityLoadLogicTemplateLoadSteps": [],
+  "entityLoadLogicTemplateLoadOpts": [
+      {
+          "entityLoadLogicTemplateLoadOptId": "43b5af99-64b6-4ed2-afae-1a79ead8e5d9",
+          "entityLoadLogicTemplateId": "bca3609d-6b27-4484-ac2c-d95659b09682",
+          "loadOptName": "OPT_HISTORIZED_BY_DATAHASH_AS_INSERT",
+          "value": "true",
+          "loadOptType": "OPT_HISTORIZED_BY_DATAHASH_AS_INSERT"
+      }
+  ],
+  "entityTypeEntityLoadTypeEntityLoadLogicTemplates": [
+      {
+          "entityTypeEntityLoadTypeEntityLoadLogicTemplateId": "7a094169-d8b2-4046-b551-45e2f876f651",
+          "entityType": "PSA",
+          "entityLoadType": "TRANSFORM_PERSIST",
+          "entityLoadLogicTemplateId": "bca3609d-6b27-4484-ac2c-d95659b09682",
+          "templateOrdinalPosition": 100,
+          "isDefault": true
+      }
+  ]
+}

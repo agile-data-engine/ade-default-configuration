@@ -1,0 +1,1332 @@
+{
+    "packageName": "CONFIG_ENTITY_DEFAULTS",
+    "packageVersion": "1000001",
+    "templateVersion": "2",
+    "dataPackage": {
+        "packageId": "8e5ee108-df82-4f67-acbd-cbbe2d33e705",
+        "packageName": "CONFIG_ENTITY_DEFAULTS",
+        "packageVersion": "1000001",
+        "createdUser": "SYSTEM",
+        "packageStatus": "COMMITTED",
+        "createdTimestamp": 1703233713878,
+        "modifiedTimestamp": 1704192804643,
+        "modifiedUser": "taha.gad@agiledataengine.com",
+        "statusChangedTimestamp": 1703233713878,
+        "statusChangedUser": "taha.gad@agiledataengine.com",
+        "deleted": false,
+        "description": "#System",
+        "packageType": "CONFIG_PACKAGE"
+    },
+    "packageDependencies": [
+        {
+            "packageId": "709637c8-b7ad-4f33-89d1-cafd09bd6706",
+            "packageName": "CONFIG_DATATYPES",
+            "packageType": "CONFIG_PACKAGE",
+            "dagLevel": 1
+        },
+        {
+            "packageId": "f668e8a6-bb0e-4d2a-8231-5d19e8432228",
+            "packageName": "CONFIG_LOAD_TRANSFORMATIONS",
+            "packageType": "CONFIG_PACKAGE",
+            "dagLevel": 1
+        }
+    ],
+    "entityTypes": [
+        {
+            "entityType": "BRIDGE",
+            "description": "Bridge Entity",
+            "namePrefix": "B_",
+            "dvEntity": true,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "bdv",
+            "defaultZone": "BUSINESS_RULES",
+            "defaultPhysicalType": "TABLE"
+        },
+        {
+            "entityType": "DIM",
+            "description": "Dimension Entity",
+            "namePrefix": "D_",
+            "dvEntity": false,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "publish",
+            "defaultZone": "INFORMATION_DELIVERY",
+            "defaultPhysicalType": "TABLE"
+        },
+        {
+            "entityType": "FACT",
+            "description": "Fact Entity",
+            "namePrefix": "F_",
+            "dvEntity": false,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "publish",
+            "defaultZone": "INFORMATION_DELIVERY",
+            "defaultPhysicalType": "TABLE"
+        },
+        {
+            "entityType": "FLAT",
+            "description": "Flat Entity",
+            "namePrefix": "FL_",
+            "dvEntity": false,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "publish",
+            "defaultZone": "INFORMATION_DELIVERY",
+            "defaultPhysicalType": "TABLE"
+        },
+        {
+            "entityType": "GENERIC",
+            "description": "Generic Entity",
+            "dvEntity": false,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "publish",
+            "defaultZone": "INFORMATION_DELIVERY",
+            "defaultPhysicalType": "TABLE"
+        },
+        {
+            "entityType": "HUB",
+            "description": "Hub Entity",
+            "namePrefix": "H_",
+            "dvEntity": true,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "rdv",
+            "defaultZone": "RAW",
+            "defaultPhysicalType": "TABLE"
+        },
+        {
+            "entityType": "LINK",
+            "description": "Link Entity",
+            "namePrefix": "L_",
+            "dvEntity": true,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "rdv",
+            "defaultZone": "RAW",
+            "defaultPhysicalType": "TABLE"
+        },
+        {
+            "entityType": "LOGICAL",
+            "description": "Logical Model Entity",
+            "dvEntity": false,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "logical",
+            "defaultZone": "LOGICAL_MODEL",
+            "defaultPhysicalType": "METADATA_ONLY"
+        },
+        {
+            "entityType": "PIT",
+            "description": "Point-in-Time Entity",
+            "namePrefix": "P_",
+            "dvEntity": true,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "bdv",
+            "defaultZone": "BUSINESS_RULES",
+            "defaultPhysicalType": "TABLE"
+        },
+        {
+            "entityType": "REF",
+            "description": "Reference Entity",
+            "namePrefix": "R_",
+            "dvEntity": true,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "rdv",
+            "defaultZone": "RAW",
+            "defaultPhysicalType": "TABLE"
+        },
+        {
+            "entityType": "SAT",
+            "description": "Satellite Entity",
+            "namePrefix": "S_",
+            "dvEntity": true,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "rdv",
+            "defaultZone": "RAW",
+            "defaultPhysicalType": "TABLE"
+        },
+        {
+            "entityType": "SAT_C",
+            "description": "Satellite Current View",
+            "namePrefix": "S_",
+            "nameSuffix": "_C",
+            "dvEntity": true,
+            "byDefaultAutoManaged": true,
+            "defaultSchema": "rdv",
+            "defaultZone": "RAW",
+            "parentEntityType": "SAT",
+            "relationshipType": "CURRENT_VIEW",
+            "defaultPhysicalType": "VIEW"
+        },
+        {
+            "entityType": "SAT_MA",
+            "description": "Multi-active Satellite Entity",
+            "namePrefix": "S_MA_",
+            "dvEntity": true,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "rdv",
+            "defaultZone": "RAW",
+            "defaultPhysicalType": "TABLE"
+        },
+        {
+            "entityType": "SAT_MA_C",
+            "description": "Multi-active Satellite Current View",
+            "namePrefix": "S_MA_",
+            "nameSuffix": "_C",
+            "dvEntity": true,
+            "byDefaultAutoManaged": true,
+            "defaultSchema": "rdv",
+            "defaultZone": "RAW",
+            "parentEntityType": "SAT_MA",
+            "relationshipType": "CURRENT_VIEW",
+            "defaultPhysicalType": "VIEW"
+        },
+        {
+            "entityType": "SOURCE",
+            "description": "Source Entity",
+            "dvEntity": false,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "src",
+            "defaultZone": "SOURCE",
+            "defaultPhysicalType": "METADATA_ONLY"
+        },
+        {
+            "entityType": "STAGE",
+            "description": "Staging Entity",
+            "namePrefix": "STG_",
+            "dvEntity": false,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "staging",
+            "defaultZone": "INGESTION",
+            "defaultPhysicalType": "TABLE"
+        },
+        {
+            "entityType": "S_SAT",
+            "description": "Status Satellite Entity",
+            "namePrefix": "STS_",
+            "dvEntity": true,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "bdv",
+            "defaultZone": "BUSINESS_RULES",
+            "defaultPhysicalType": "TABLE"
+        },
+        {
+            "entityType": "S_SAT_C",
+            "description": "Status Satellite Current View",
+            "namePrefix": "STS_",
+            "nameSuffix": "_C",
+            "dvEntity": true,
+            "byDefaultAutoManaged": true,
+            "defaultSchema": "bdv",
+            "defaultZone": "BUSINESS_RULES",
+            "parentEntityType": "S_SAT",
+            "relationshipType": "CURRENT_VIEW",
+            "defaultPhysicalType": "VIEW"
+        },
+        {
+            "entityType": "PSA",
+            "description": "Persistent Staging Entity",
+            "namePrefix": "PSA_",
+            "dvEntity": false,
+            "byDefaultAutoManaged": false,
+            "defaultSchema": "dw",
+            "defaultZone": "RAW",
+            "defaultPhysicalType": "TABLE"
+        }
+    ],
+    "attributeTypes": [
+        {
+            "attributeType": "DV_DATAHASH"
+        },
+        {
+            "attributeType": "DV_DRIVING_KEY"
+        },
+        {
+            "attributeType": "DV_HASHKEY"
+        },
+        {
+            "attributeType": "DV_LOAD_TIME"
+        },
+        {
+            "attributeType": "DV_REFERENCING_HASHKEY",
+            "superAttributeType": "DV_HASHKEY"
+        },
+        {
+            "attributeType": "DV_RUNNING_ID"
+        },
+        {
+            "attributeType": "DV_SOURCE_SYSTEM"
+        },
+        {
+            "attributeType": "DV_SOURCE_ENTITY"
+        },
+        {
+            "attributeType": "DV_LOAD_NAME"
+        },
+        {
+            "attributeType": "DV_PACKAGE_VERSION"
+        },
+        {
+            "attributeType": "DV_UPDATE_TIME"
+        },
+        {
+            "attributeType": "RUN_ID"
+        },
+        {
+            "attributeType": "STG_CREATE_TIME"
+        },
+        {
+            "attributeType": "STG_SOURCE_SYSTEM"
+        },
+        {
+            "attributeType": "STG_SOURCE_ENTITY"
+        },
+        {
+            "attributeType": "STATUS"
+        },
+        {
+            "attributeType": "TIMESLOT"
+        },
+        {
+            "attributeType": "BUSINESS_KEY"
+        }
+    ],
+    "defaultAttributes": [
+        {
+            "defaultAttributeId": "1",
+            "attributeNameTemplate": "dv_id",
+            "datatype": "CHAR",
+            "charUsed": false,
+            "dataLength": 32,
+            "description": "Data Vault hash key",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_HASHKEY"
+        },
+        {
+            "defaultAttributeId": "1003",
+            "attributeNameTemplate": "business_key",
+            "datatype": "VARCHAR",
+            "charUsed": false,
+            "dataLength": 200,
+            "description": "Business key",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "BUSINESS_KEY"
+        },
+        {
+            "defaultAttributeId": "10",
+            "attributeNameTemplate": "stg_batch_id",
+            "datatype": "INTEGER8",
+            "charUsed": false,
+            "description": "Internal attribute for Run ID Logic",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "RUN_ID"
+        },
+        {
+            "defaultAttributeId": "11",
+            "attributeNameTemplate": "stg_create_time",
+            "datatype": "TIMESTAMP",
+            "charUsed": false,
+            "description": "Internal attribute",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "STG_CREATE_TIME"
+        },
+        {
+            "defaultAttributeId": "13",
+            "attributeNameTemplate": "stg_source_system",
+            "datatype": "VARCHAR",
+            "charUsed": false,
+            "dataLength": 50,
+            "description": "Source system name",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "STG_SOURCE_SYSTEM"
+        },
+        {
+            "defaultAttributeId": "1002",
+            "attributeNameTemplate": "stg_source_entity",
+            "datatype": "VARCHAR",
+            "charUsed": false,
+            "dataLength": 100,
+            "description": "Source entity name",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "STG_SOURCE_ENTITY"
+        },
+        {
+            "defaultAttributeId": "16",
+            "attributeNameTemplate": "<entity_name>_id",
+            "datatype": "INTEGER4",
+            "charUsed": false,
+            "isNullable": false,
+            "isPersistent": true
+        },
+        {
+            "defaultAttributeId": "17",
+            "attributeNameTemplate": "dv_running_id",
+            "datatype": "INTEGER4",
+            "charUsed": false,
+            "description": "Data Vault multi-active satellite value identifier",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_RUNNING_ID"
+        },
+        {
+            "defaultAttributeId": "2",
+            "attributeNameTemplate": "dv_id",
+            "datatype": "CHAR",
+            "charUsed": false,
+            "dataLength": 32,
+            "description": "Data Vault referencing hash key",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_REFERENCING_HASHKEY"
+        },
+        {
+            "defaultAttributeId": "3",
+            "attributeNameTemplate": "dv_load_time",
+            "datatype": "TIMESTAMP",
+            "charUsed": false,
+            "description": "Data Vault load time",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_LOAD_TIME"
+        },
+        {
+            "defaultAttributeId": "4",
+            "attributeNameTemplate": "dv_run_id",
+            "datatype": "INTEGER8",
+            "charUsed": false,
+            "description": "Internal attribute for Run ID Logic",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "RUN_ID"
+        },
+        {
+            "defaultAttributeId": "5",
+            "attributeNameTemplate": "dv_source_system",
+            "datatype": "VARCHAR",
+            "charUsed": false,
+            "dataLength": 50,
+            "description": "Source system name",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_SOURCE_SYSTEM"
+        },
+        {
+            "defaultAttributeId": "1001",
+            "attributeNameTemplate": "dv_source_entity",
+            "datatype": "VARCHAR",
+            "charUsed": false,
+            "dataLength": 100,
+            "description": "Source entity name",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_SOURCE_ENTITY"
+        },
+        {
+            "defaultAttributeId": "6",
+            "attributeNameTemplate": "dv_datahash",
+            "datatype": "CHAR",
+            "charUsed": false,
+            "dataLength": 32,
+            "description": "Data Vault comparison hash",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_DATAHASH"
+        },
+        {
+            "defaultAttributeId": "7",
+            "attributeNameTemplate": "dv_driving_key",
+            "datatype": "CHAR",
+            "charUsed": false,
+            "dataLength": 32,
+            "description": "Data Vault status satellite driving key",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_DRIVING_KEY"
+        },
+        {
+            "defaultAttributeId": "8",
+            "attributeNameTemplate": "status",
+            "datatype": "INTEGER1",
+            "charUsed": false,
+            "description": "Data Vault status satellite active|inactive indicator (1|0)",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "STATUS"
+        },
+        {
+            "defaultAttributeId": "1004",
+            "attributeNameTemplate": "dw_id",
+            "datatype": "CHAR",
+            "charUsed": false,
+            "dataLength": 32,
+            "description": "Hash key",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_HASHKEY"
+        },
+        {
+            "defaultAttributeId": "1005",
+            "attributeNameTemplate": "dw_key",
+            "datatype": "VARCHAR",
+            "charUsed": false,
+            "dataLength": 200,
+            "description": "Non-hashed key",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "BUSINESS_KEY"
+        },
+        {
+            "defaultAttributeId": "1006",
+            "attributeNameTemplate": "dw_datahash",
+            "datatype": "CHAR",
+            "charUsed": false,
+            "dataLength": 32,
+            "description": "Comparison hash",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_DATAHASH"
+        },
+        {
+            "defaultAttributeId": "1007",
+            "attributeNameTemplate": "dw_run_id",
+            "datatype": "INTEGER8",
+            "charUsed": false,
+            "description": "Internal attribute for Run ID Logic",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "RUN_ID"
+        },
+        {
+            "defaultAttributeId": "1008",
+            "attributeNameTemplate": "dw_insert_time",
+            "datatype": "TIMESTAMP",
+            "charUsed": false,
+            "description": "Insert timestamp",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_LOAD_TIME"
+        },
+        {
+            "defaultAttributeId": "1009",
+            "attributeNameTemplate": "dw_update_time",
+            "datatype": "TIMESTAMP",
+            "charUsed": false,
+            "description": "Update timestamp",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_UPDATE_TIME"
+        },
+        {
+            "defaultAttributeId": "1010",
+            "attributeNameTemplate": "dw_source_system",
+            "datatype": "VARCHAR",
+            "charUsed": false,
+            "dataLength": 50,
+            "description": "Source system name",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_SOURCE_SYSTEM"
+        },
+        {
+            "defaultAttributeId": "1011",
+            "attributeNameTemplate": "dw_source_entity",
+            "datatype": "VARCHAR",
+            "charUsed": false,
+            "dataLength": 100,
+            "description": "Source entity name",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_SOURCE_ENTITY"
+        },
+        {
+            "defaultAttributeId": "1012",
+            "attributeNameTemplate": "dv_load_name",
+            "datatype": "VARCHAR",
+            "charUsed": false,
+            "dataLength": 200,
+            "description": "Load name",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_LOAD_NAME"
+        },
+        {
+            "defaultAttributeId": "1013",
+            "attributeNameTemplate": "dv_package_version",
+            "datatype": "INTEGER8",
+            "charUsed": false,
+            "description": "Package version",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_PACKAGE_VERSION"
+        },
+        {
+            "defaultAttributeId": "1014",
+            "attributeNameTemplate": "dw_load_name",
+            "datatype": "VARCHAR",
+            "charUsed": false,
+            "dataLength": 200,
+            "description": "Load name",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_LOAD_NAME"
+        },
+        {
+            "defaultAttributeId": "1015",
+            "attributeNameTemplate": "dw_package_version",
+            "datatype": "INTEGER8",
+            "charUsed": false,
+            "description": "Package version",
+            "isNullable": false,
+            "isPersistent": true,
+            "attributeType": "DV_PACKAGE_VERSION"
+        }
+    ],
+    "entityTypeDefaultAttributes": [
+        {
+            "entityTypeDefaultAttributeId": "8",
+            "entityType": "HUB",
+            "defaultAttributeId": "1",
+            "position": "1",
+            "transformationType": "HASH_KEY"
+        },
+        {
+            "entityTypeDefaultAttributeId": "9",
+            "entityType": "HUB",
+            "defaultAttributeId": "3",
+            "position": "2",
+            "transformationType": "CURRENT_TS"
+        },
+        {
+            "entityTypeDefaultAttributeId": "10",
+            "entityType": "HUB",
+            "defaultAttributeId": "4",
+            "position": "3",
+            "transformationType": "RUN_ID"
+        },
+        {
+            "entityTypeDefaultAttributeId": "11",
+            "entityType": "HUB",
+            "defaultAttributeId": "5",
+            "position": "4"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1001",
+            "entityType": "HUB",
+            "defaultAttributeId": "1001",
+            "position": "5"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1016",
+            "entityType": "HUB",
+            "defaultAttributeId": "1012",
+            "position": "6",
+            "transformationType": "LOAD_NAME"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1017",
+            "entityType": "HUB",
+            "defaultAttributeId": "1013",
+            "position": "7",
+            "transformationType": "PACKAGE_VERSION"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1007",
+            "entityType": "HUB",
+            "defaultAttributeId": "1003",
+            "position": "8",
+            "transformationType": "BUSINESS_KEY"
+        },
+        {
+            "entityTypeDefaultAttributeId": "23",
+            "entityType": "LINK",
+            "defaultAttributeId": "1",
+            "position": "1",
+            "transformationType": "HASH_KEY"
+        },
+        {
+            "entityTypeDefaultAttributeId": "24",
+            "entityType": "LINK",
+            "defaultAttributeId": "3",
+            "position": "2",
+            "transformationType": "CURRENT_TS"
+        },
+        {
+            "entityTypeDefaultAttributeId": "25",
+            "entityType": "LINK",
+            "defaultAttributeId": "4",
+            "position": "3",
+            "transformationType": "RUN_ID"
+        },
+        {
+            "entityTypeDefaultAttributeId": "26",
+            "entityType": "LINK",
+            "defaultAttributeId": "5",
+            "position": "4"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1002",
+            "entityType": "LINK",
+            "defaultAttributeId": "1001",
+            "position": "5"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1018",
+            "entityType": "LINK",
+            "defaultAttributeId": "1012",
+            "position": "6",
+            "transformationType": "LOAD_NAME"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1019",
+            "entityType": "LINK",
+            "defaultAttributeId": "1013",
+            "position": "7",
+            "transformationType": "PACKAGE_VERSION"
+        },
+        {
+            "entityTypeDefaultAttributeId": "30",
+            "entityType": "LOGICAL",
+            "defaultAttributeId": "16",
+            "position": "1"
+        },
+        {
+            "entityTypeDefaultAttributeId": "12",
+            "entityType": "SAT",
+            "defaultAttributeId": "2",
+            "position": "1",
+            "transformationType": "HASH_KEY"
+        },
+        {
+            "entityTypeDefaultAttributeId": "13",
+            "entityType": "SAT",
+            "defaultAttributeId": "3",
+            "position": "2",
+            "transformationType": "CURRENT_TS"
+        },
+        {
+            "entityTypeDefaultAttributeId": "14",
+            "entityType": "SAT",
+            "defaultAttributeId": "4",
+            "position": "3",
+            "transformationType": "RUN_ID"
+        },
+        {
+            "entityTypeDefaultAttributeId": "15",
+            "entityType": "SAT",
+            "defaultAttributeId": "5",
+            "position": "4"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1003",
+            "entityType": "SAT",
+            "defaultAttributeId": "1001",
+            "position": "5"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1020",
+            "entityType": "SAT",
+            "defaultAttributeId": "1012",
+            "position": "6",
+            "transformationType": "LOAD_NAME"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1021",
+            "entityType": "SAT",
+            "defaultAttributeId": "1013",
+            "position": "7",
+            "transformationType": "PACKAGE_VERSION"
+        },
+        {
+            "entityTypeDefaultAttributeId": "16",
+            "entityType": "SAT",
+            "defaultAttributeId": "6",
+            "position": "8",
+            "transformationType": "HASH_DIFF"
+        },
+        {
+            "entityTypeDefaultAttributeId": "33",
+            "entityType": "SAT_MA",
+            "defaultAttributeId": "2",
+            "position": "1",
+            "transformationType": "HASH_KEY"
+        },
+        {
+            "entityTypeDefaultAttributeId": "34",
+            "entityType": "SAT_MA",
+            "defaultAttributeId": "3",
+            "position": "2",
+            "transformationType": "CURRENT_TS"
+        },
+        {
+            "entityTypeDefaultAttributeId": "35",
+            "entityType": "SAT_MA",
+            "defaultAttributeId": "4",
+            "position": "3",
+            "transformationType": "RUN_ID"
+        },
+        {
+            "entityTypeDefaultAttributeId": "36",
+            "entityType": "SAT_MA",
+            "defaultAttributeId": "5",
+            "position": "4"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1004",
+            "entityType": "SAT_MA",
+            "defaultAttributeId": "1001",
+            "position": "5"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1022",
+            "entityType": "SAT_MA",
+            "defaultAttributeId": "1012",
+            "position": "6",
+            "transformationType": "LOAD_NAME"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1023",
+            "entityType": "SAT_MA",
+            "defaultAttributeId": "1013",
+            "position": "7",
+            "transformationType": "PACKAGE_VERSION"
+        },
+        {
+            "entityTypeDefaultAttributeId": "37",
+            "entityType": "SAT_MA",
+            "defaultAttributeId": "6",
+            "position": "8",
+            "transformationType": "HASH_LIST"
+        },
+        {
+            "entityTypeDefaultAttributeId": "32",
+            "entityType": "SAT_MA",
+            "defaultAttributeId": "17",
+            "position": "9",
+            "transformationType": "DV_RUNNING_ID"
+        },
+        {
+            "entityTypeDefaultAttributeId": "2",
+            "entityType": "STAGE",
+            "defaultAttributeId": "10",
+            "position": "1"
+        },
+        {
+            "entityTypeDefaultAttributeId": "3",
+            "entityType": "STAGE",
+            "defaultAttributeId": "11",
+            "position": "2"
+        },
+        {
+            "entityTypeDefaultAttributeId": "5",
+            "entityType": "STAGE",
+            "defaultAttributeId": "13",
+            "position": "3"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1006",
+            "entityType": "STAGE",
+            "defaultAttributeId": "1002",
+            "position": "4"
+        },
+        {
+            "entityTypeDefaultAttributeId": "17",
+            "entityType": "S_SAT",
+            "defaultAttributeId": "2",
+            "position": "1",
+            "transformationType": "HASH_KEY"
+        },
+        {
+            "entityTypeDefaultAttributeId": "18",
+            "entityType": "S_SAT",
+            "defaultAttributeId": "3",
+            "position": "2",
+            "transformationType": "CURRENT_TS"
+        },
+        {
+            "entityTypeDefaultAttributeId": "19",
+            "entityType": "S_SAT",
+            "defaultAttributeId": "4",
+            "position": "3",
+            "transformationType": "RUN_ID"
+        },
+        {
+            "entityTypeDefaultAttributeId": "20",
+            "entityType": "S_SAT",
+            "defaultAttributeId": "5",
+            "position": "4"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1005",
+            "entityType": "S_SAT",
+            "defaultAttributeId": "1001",
+            "position": "5"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1024",
+            "entityType": "S_SAT",
+            "defaultAttributeId": "1012",
+            "position": "6",
+            "transformationType": "LOAD_NAME"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1025",
+            "entityType": "S_SAT",
+            "defaultAttributeId": "1013",
+            "position": "7",
+            "transformationType": "PACKAGE_VERSION"
+        },
+        {
+            "entityTypeDefaultAttributeId": "21",
+            "entityType": "S_SAT",
+            "defaultAttributeId": "7",
+            "position": "8",
+            "transformationType": "HASH_KEY"
+        },
+        {
+            "entityTypeDefaultAttributeId": "22",
+            "entityType": "S_SAT",
+            "defaultAttributeId": "8",
+            "position": "9",
+            "transformationType": "DV_STATUS"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1008",
+            "entityType": "PSA",
+            "defaultAttributeId": "1004",
+            "position": "1",
+            "transformationType": "HASH_KEY"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1009",
+            "entityType": "PSA",
+            "defaultAttributeId": "1005",
+            "position": "2",
+            "transformationType": "BUSINESS_KEY"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1010",
+            "entityType": "PSA",
+            "defaultAttributeId": "1006",
+            "position": "3",
+            "transformationType": "HASH_DIFF"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1011",
+            "entityType": "PSA",
+            "defaultAttributeId": "1007",
+            "position": "4",
+            "transformationType": "RUN_ID"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1012",
+            "entityType": "PSA",
+            "defaultAttributeId": "1008",
+            "position": "5",
+            "transformationType": "CURRENT_TS"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1013",
+            "entityType": "PSA",
+            "defaultAttributeId": "1009",
+            "position": "6",
+            "transformationType": "CURRENT_TS"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1014",
+            "entityType": "PSA",
+            "defaultAttributeId": "1010",
+            "position": "7"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1015",
+            "entityType": "PSA",
+            "defaultAttributeId": "1011",
+            "position": "8"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1026",
+            "entityType": "PSA",
+            "defaultAttributeId": "1014",
+            "position": "9",
+            "transformationType": "LOAD_NAME"
+        },
+        {
+            "entityTypeDefaultAttributeId": "1027",
+            "entityType": "PSA",
+            "defaultAttributeId": "1015",
+            "position": "10",
+            "transformationType": "PACKAGE_VERSION"
+        }
+    ],
+    "entityTypeDefaultLoadTypes": [
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "BRIDGE",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "BRIDGE",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "BRIDGE",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "BRIDGE",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "DIM",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "DIM",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "DIM",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "DIM",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "FACT",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "FACT",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "FACT",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "FACT",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "FLAT",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "FLAT",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "FLAT",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "FLAT",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "GENERIC",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "GENERIC",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "GENERIC",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "GENERIC",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "HUB",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "HUB",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "HUB",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "HUB",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "LINK",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "LINK",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "LINK",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "LINK",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "LOGICAL",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "LOGICAL",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "LOGICAL",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "LOGICAL",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "PIT",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "PIT",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "PIT",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "PIT",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "REF",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "REF",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "REF",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "REF",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "SAT",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "SAT",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "SAT",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "SAT",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "SAT_C",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "SAT_C",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "SAT_C",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "SAT_C",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "SAT_MA",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "SAT_MA",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "SAT_MA",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "SAT_MA",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "SAT_MA_C",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "SAT_MA_C",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "SAT_MA_C",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "SAT_MA_C",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "SOURCE",
+            "loadType": "CRAWLER_EXTRACT"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "SOURCE",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "SOURCE",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "SOURCE",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "STAGE",
+            "loadType": "LOAD_FILE"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "STAGE",
+            "loadType": "LOAD_FILE"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "STAGE",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "STAGE",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "S_SAT",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "S_SAT",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "S_SAT",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "S_SAT",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "METADATA_ONLY",
+            "entityType": "S_SAT_C",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "S_SAT_C",
+            "loadType": "TRANSFORM_PERSIST"
+        },
+        {
+            "entityPhysicalType": "VIEW",
+            "entityType": "S_SAT_C",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "MATERIALIZED_VIEW",
+            "entityType": "S_SAT_C",
+            "loadType": "TRANSFORM_SQL_VIEW"
+        },
+        {
+            "entityPhysicalType": "TABLE",
+            "entityType": "PSA",
+            "loadType": "TRANSFORM_PERSIST"
+        }
+    ],
+    "physicalOptTypePerEntityTypePerPhysicalTypes": [],
+    "keyTypePerEntityTypePerPhysicalTypes": [],
+    "keyTypeAttributePerEntityTypePerPhysicalTypes": []
+}
