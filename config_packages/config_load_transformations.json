@@ -50,49 +50,49 @@
   }, {
     "transformationType" : "CONCAT",
     "shortDescription" : "Concatenation of mapped attributes",
-    "description" : "Concatenation of mapped attributes.",
+    "description" : "Concatenation of mapped attributes: case-sensitive, nulls converted to '-1', datatypes BOOL, DATE, GEOGRAPHY, TIME, TIMESTAMP, TIMESTAMP_TZ converted to an explicit VARCHAR format<sup>*</sup>, concatenated with '~' as separator.",
     "isShownInDesigner" : true,
     "ordinalPositionInDesigner" : 5
   }, {
     "transformationType" : "RUN_ID",
     "shortDescription" : "Unique RUN_ID for each transaction",
-    "description" : "Unique RUN_ID for each transaction.",
+    "description" : "Inserts a unique RUN_ID for each transaction. Used with Run ID Logic.",
     "isShownInDesigner" : true,
     "ordinalPositionInDesigner" : 6
   }, {
     "transformationType" : "CURRENT_TS",
     "shortDescription" : "Current timestamp",
-    "description" : "Current timestamp.",
+    "description" : "Current timestamp, UTC if available.",
     "isShownInDesigner" : true,
     "ordinalPositionInDesigner" : 7
   }, {
     "transformationType" : "LOAD_NAME",
     "shortDescription" : "Load name",
-    "description" : "Load name.",
+    "description" : "Inserts load name as metadata.",
     "isShownInDesigner" : true,
     "ordinalPositionInDesigner" : 8
   }, {
     "transformationType" : "PACKAGE_VERSION",
     "shortDescription" : "Package version",
-    "description" : "Package version.",
+    "description" : "Inserts package version as metadata. Allows tracing which package version was installed when rows were inserted.",
     "isShownInDesigner" : true,
     "ordinalPositionInDesigner" : 9
   }, {
     "transformationType" : "DV_STATUS",
-    "shortDescription" : "Status satellite activity indicator (1 or 0)",
-    "description" : "Status satellite activity indicator (1 or 0).",
+    "shortDescription" : "Data Vault status satellite activity indicator (1 or 0)",
+    "description" : "Data Vault status satellite activity indicator (1 or 0).",
     "isShownInDesigner" : true,
     "ordinalPositionInDesigner" : 10
   }, {
     "transformationType" : "DV_RUNNING_ID",
     "shortDescription" : "Data Vault DV_RUNNING_ID transformation",
-    "description" : "Data Vault DV_RUNNING_ID transformation.",
+    "description" : "DV_RUNNING_ID transformation used in Data Vault multi-active satellites.",
     "isShownInDesigner" : true,
     "ordinalPositionInDesigner" : 11
   }, {
     "transformationType" : "HASH_LIST",
     "shortDescription" : "Data Vault HASH list transformation",
-    "description" : "Data Vault HASH list transformation.",
+    "description" : "HASH_LIST transformation used in Data Vault multi-active satellites.",
     "isShownInDesigner" : true,
     "ordinalPositionInDesigner" : 12
   }, {
