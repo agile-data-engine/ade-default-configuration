@@ -73,6 +73,7 @@ Supported target databases:
 - Google BigQuery
 - Microsoft Fabric
 - Snowflake
+- PostgreSQL
 
 ### Load templates
 
