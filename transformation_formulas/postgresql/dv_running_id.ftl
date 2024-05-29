@@ -27,12 +27,6 @@
         </#if>
     </@compress>
 </#macro>
-<#if sourceAttributes?has_content>
-    <#if sourceAttributes?size == 1 >
-        <@prefixHandler prefix/>${sourceAttributes[0].attributeName}
-    <#else>
-        <@sourceAttributeList sourceAttributes=sourceAttributes prefix=prefix />
-    </#if>
-<#else>
-    null
-</#if>
+ROW_NUMBER() OVER (
+    PARTITION BY MD5(UPPER(<@sourceAttributeList sourceAttributes=sourceAttributes prefix=prefix/>))
+    ORDER BY UPPER(<@sourceAttributeList sourceAttributes=sourceAttributes prefix=prefix/>))
