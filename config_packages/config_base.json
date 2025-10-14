@@ -1,0 +1,1063 @@
+{
+  "packageName" : "CONFIG_BASE",
+  "packageVersion" : "1000000",
+  "templateVersion" : "1.6",
+  "dataPackage" : {
+    "packageId" : "6d7d342f-158b-4608-9835-6fa6ea4a9ec0",
+    "packageName" : "CONFIG_BASE",
+    "packageVersion" : "1000000",
+    "createdUser" : "SYSTEM",
+    "packageStatus" : "COMMITTED",
+    "createdTimestamp" : 1722954297304,
+    "modifiedTimestamp" : 1723529508088,
+    "modifiedUser" : "harri.pylkkanen@agiledataengine.com",
+    "statusChangedTimestamp" : 1723529475715,
+    "statusChangedUser" : "harri.pylkkanen@agiledataengine.com",
+    "deleted" : false,
+    "description" : "#System",
+    "packageType" : "CONFIG_PACKAGE"
+  },
+  "packageDependencies" : [ ],
+  "dwDbmsProducts" : [ {
+    "dbmsProduct" : "AGILE_DATA_ENGINE",
+    "dbmsProductName" : "Agile Data Engine",
+    "batchExecutionSupported" : "N",
+    "autoCommitForced" : "N"
+  }, {
+    "dbmsProduct" : "BIGQUERY",
+    "dbmsProductName" : "Google BigQuery",
+    "batchExecutionSupported" : "N",
+    "autoCommitForced" : "Y"
+  }, {
+    "dbmsProduct" : "DATABRICKS",
+    "dbmsProductName" : "Databricks",
+    "batchExecutionSupported" : "N",
+    "autoCommitForced" : "Y"
+  }, {
+    "dbmsProduct" : "DUCKDB",
+    "dbmsProductName" : "DuckDB",
+    "batchExecutionSupported" : "N",
+    "autoCommitForced" : "N"
+  }, {
+    "dbmsProduct" : "MS_FABRIC",
+    "dbmsProductName" : "Microsoft Fabric",
+    "batchExecutionSupported" : "Y",
+    "autoCommitForced" : "N"
+  }, {
+    "dbmsProduct" : "MS_SQL",
+    "dbmsProductName" : "Azure SQL Database",
+    "batchExecutionSupported" : "N",
+    "autoCommitForced" : "N"
+  }, {
+    "dbmsProduct" : "MS_SQL_DW",
+    "dbmsProductName" : "Azure Synapse SQL",
+    "batchExecutionSupported" : "Y",
+    "autoCommitForced" : "N"
+  }, {
+    "dbmsProduct" : "MYSQL",
+    "dbmsProductName" : "MySQL",
+    "batchExecutionSupported" : "N",
+    "autoCommitForced" : "N"
+  }, {
+    "dbmsProduct" : "ORACLE",
+    "dbmsProductName" : "Oracle",
+    "batchExecutionSupported" : "N",
+    "autoCommitForced" : "N"
+  }, {
+    "dbmsProduct" : "POSTGRESQL",
+    "dbmsProductName" : "PostgreSQL",
+    "batchExecutionSupported" : "N",
+    "autoCommitForced" : "N"
+  }, {
+    "dbmsProduct" : "REDSHIFT",
+    "dbmsProductName" : "Amazon Redshift",
+    "batchExecutionSupported" : "Y",
+    "autoCommitForced" : "N"
+  }, {
+    "dbmsProduct" : "SNOWFLAKE",
+    "dbmsProductName" : "Snowflake",
+    "batchExecutionSupported" : "N",
+    "autoCommitForced" : "N"
+  } ],
+  "dbmsProducts" : [ {
+    "dbmsProduct" : "AGILE_DATA_ENGINE",
+    "dbmsProductName" : "Agile Data Engine",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 6,
+    "isProceduresSupported" : false
+  }, {
+    "dbmsProduct" : "BIGQUERY",
+    "dbmsProductName" : "Google BigQuery",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 7,
+    "isProceduresSupported" : false
+  }, {
+    "dbmsProduct" : "DATABRICKS",
+    "dbmsProductName" : "Databricks",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 8,
+    "isProceduresSupported" : false
+  }, {
+    "dbmsProduct" : "MS_FABRIC",
+    "dbmsProductName" : "Microsoft Fabric",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 9,
+    "isProceduresSupported" : true
+  }, {
+    "dbmsProduct" : "MS_SQL",
+    "dbmsProductName" : "Azure SQL Database",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 3,
+    "isProceduresSupported" : true
+  }, {
+    "dbmsProduct" : "MS_SQL_DW",
+    "dbmsProductName" : "Azure Synapse SQL",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 4,
+    "isProceduresSupported" : true
+  }, {
+    "dbmsProduct" : "POSTGRESQL",
+    "dbmsProductName" : "PostgreSQL",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 5,
+    "isProceduresSupported" : false
+  }, {
+    "dbmsProduct" : "REDSHIFT",
+    "dbmsProductName" : "Amazon Redshift",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 2,
+    "isProceduresSupported" : false
+  }, {
+    "dbmsProduct" : "SNOWFLAKE",
+    "dbmsProductName" : "Snowflake",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 1,
+    "isProceduresSupported" : false
+  } ],
+  "zones" : [ {
+    "zoneName" : "BUSINESS_RULES",
+    "description" : "Business Rules"
+  }, {
+    "zoneName" : "INFORMATION_DELIVERY",
+    "description" : "Information Delivery"
+  }, {
+    "zoneName" : "INGESTION",
+    "description" : "Ingestion"
+  }, {
+    "zoneName" : "LOGICAL_MODEL",
+    "description" : "Logical Model"
+  }, {
+    "zoneName" : "RAW",
+    "description" : "Raw"
+  }, {
+    "zoneName" : "SOURCE",
+    "description" : "Source"
+  } ],
+  "entityPhysicalOptTypes" : [ {
+    "optType" : "DEPLOYMENT.COMPUTE_CLUSTER",
+    "dataType" : "STRING",
+    "description" : "Defines the compute cluster being used in deployment phase in Snowflake",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 13
+  }, {
+    "optType" : "MAINTENANCE.SCHEDULING_CRON",
+    "dataType" : "CRON_EXPRESSION",
+    "description" : "",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 102
+  }, {
+    "optType" : "MAINTENANCE.SCHEDULING_NAME",
+    "dataType" : "STRING",
+    "description" : "",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 101
+  }, {
+    "optType" : "MAINTENANCE.SORT_KEY_RECLUSTERING",
+    "dataType" : "BOOLEAN",
+    "description" : "",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 104
+  }, {
+    "optType" : "MAINTENANCE.VACUUM",
+    "dataType" : "BOOLEAN",
+    "description" : "",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 103
+  }, {
+    "optType" : "STORAGE.AUTO_CLUSTERING_SUSPEND",
+    "dataType" : "BOOLEAN",
+    "description" : "Controls whether the Automatic Clustering is suspended or not in Snowflake",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 4
+  }, {
+    "optType" : "STORAGE.CHANGE_TRACKING",
+    "dataType" : "BOOLEAN",
+    "description" : "This option toggles on/off the change tracking feature. By default false. Valid in Snowflake.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 8
+  }, {
+    "optType" : "STORAGE.COLUMN_STORE",
+    "dataType" : "BOOLEAN",
+    "description" : "Declares whether a table uses column or row wise table orientation. Valid in MS SQL and MS SQL DW.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 6
+  }, {
+    "optType" : "STORAGE.PARTITION_SCHEME",
+    "dataType" : "STRING",
+    "description" : "Option to define partition scheme for a table. Supported in Azure SQL Database and Google BigQuery.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 14
+  }, {
+    "optType" : "STORAGE.REQUIRE_PARTITION_FILTER",
+    "dataType" : "BOOLEAN",
+    "description" : "Option to require partition filter for a table. Supported in BigQuery.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 15
+  }, {
+    "optType" : "STORAGE.SEARCH_OPTIMIZATION",
+    "dataType" : "BOOLEAN",
+    "description" : "This option toggles on/off the search optimization feature. By default false. Valid in Snowflake.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 7
+  }, {
+    "optType" : "STORAGE.SECURE_VIEW",
+    "dataType" : "BOOLEAN",
+    "description" : "Snowflake specific SECURE VIEW option",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 5
+  }, {
+    "optType" : "STORAGE.SORTKEY_RECLUSTER_IN_ENTITY_RECREATE",
+    "dataType" : "BOOLEAN",
+    "description" : "Controls whether the clustering keys (SORT_KEY, INTERLEAVED_SORT_KEY, CLUSTER BY) are enforced to recluster at Deploy time when Entity Recreate will happen. Valid in Redshift and Snowflake.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 3
+  }, {
+    "optType" : "STORAGE.TABLE_STATISTICS_ATTRIBUTES",
+    "dataType" : "STRING",
+    "description" : "Defines the attribute list for which table statistics are executed for. Valid in Redshift, MS Sql, MS Sql DW, Databricks and Microsoft Fabric.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 10
+  }, {
+    "optType" : "STORAGE.TABLE_STATISTICS_OPTIONS",
+    "dataType" : "STRING",
+    "description" : "Defines the table statistics options for the statistics execution. Valid in MS Sql, MS Sql DW, Databricks and Microsoft Fabric.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 12
+  }, {
+    "optType" : "STORAGE.TABLE_STATISTICS_UPDATE_IN_ENTITY_RECREATE",
+    "dataType" : "BOOLEAN",
+    "description" : "Controls whether the table statistics are ran for a table at Deploy time when Entity Recreate will happen. Valid in Redshift, MS Sql, MS Sql DW, Databricks and Microsoft Fabric.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 9
+  }, {
+    "optType" : "STORAGE.TABLE_STATISTICS_WHERE",
+    "dataType" : "STRING",
+    "description" : "Defines the table statistics where clause which is used for statistics execution. Valid in MS SQL and MS SQL DW.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 11
+  }, {
+    "optType" : "STORAGE.TIME_TRAVEL_RETENTION_TIME_IN_DAYS",
+    "dataType" : "INT",
+    "description" : "Snowflake time travel retention time in days.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 2
+  }, {
+    "optType" : "STORAGE.TRANSIENT_TABLE",
+    "dataType" : "BOOLEAN",
+    "description" : "Snowflake transient table. Toggles off the use of Fail-safe and Time Travel areas when true.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 1
+  } ],
+  "entityLoadOptTypes" : [ {
+    "optType" : "CRAWLER_OPT_DELTA_COLUMN",
+    "dataType" : "STRING",
+    "customType" : false,
+    "description" : "This column is used for indicating that delta crawl is used instead of full load. For incremental/delta read, enter here the field name holding the timestamp value of record change in the source table (which rows have been changed and need to be crawled)."
+  }, {
+    "optType" : "CRAWLER_OPT_DELTA_COLUMN_TYPE",
+    "dataType" : "STRING",
+    "customType" : false,
+    "description" : "If integer type of delta value needs to be read instead of the timestamp, this can be configured by defining value \"INTEGER\" for this"
+  }, {
+    "optType" : "CRAWLER_OPT_DELTA_DAYS",
+    "dataType" : "INT",
+    "customType" : false,
+    "description" : "If incremental/delta crawling is used, this column will define the number of days, how much back in history the data is read from. This is related to CRAWLER_OPT_DELTA_COLUMN, which must have the field name written in it."
+  }, {
+    "optType" : "CRAWLER_OPT_DELTA_LOGIC_TOLERATE_FUTURE_TIMESTAMPS",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "By default crawler will not store deltatimestamp values in future. It will load those rows having the timestamp in the future, but that timestamp value is not stored to the last crawled status. This can be disabled by this setting."
+  }, {
+    "optType" : "CRAWLER_OPT_EXTRACT_FIELDS",
+    "dataType" : "STRING",
+    "customType" : false,
+    "description" : "Defines comma separated list of fields that are used in source table query. By default * is used."
+  }, {
+    "optType" : "CRAWLER_OPT_FETCH_SIZE",
+    "dataType" : "INT",
+    "customType" : false,
+    "description" : "On databases supporting JDBC fetch size, (E.g. Oracle) this can have the fetch size."
+  }, {
+    "optType" : "CRAWLER_OPT_GENERATE_LOAD",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "Defines is this source included in generation of the asynchronous crawl load workflow. Default is false."
+  }, {
+    "optType" : "CRAWLER_OPT_MAX_FILES_IN_MANIFEST",
+    "dataType" : "INT",
+    "customType" : false,
+    "description" : "Maximum amount of files in one manifest control file. Crawler uses this information to create manifesto files. (This impacts the memory usage of Crawler). If not defined then crawler level config is used. Use 0 if no limit is wanted."
+  }, {
+    "optType" : "CRAWLER_OPT_MAX_ROWS_IN_FILE",
+    "dataType" : "INT",
+    "customType" : false,
+    "description" : "Defines max amount of rows in one file. If not defined, then crawler level configuration is used. Use 0 if no limit is wanted."
+  }, {
+    "optType" : "CRAWLER_OPT_RETRIES",
+    "dataType" : "INT",
+    "customType" : false,
+    "description" : "Defines number of retries done case of crawling error."
+  }, {
+    "optType" : "CRAWLER_OPT_USE_FORWARD_ONLY_CONCUR_READ_ONLY_STATEMENT",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "If large dataset fetch fail on Mysql this can be used for streaming fetch. Enable this and add to jdbc url: ?useCursorFetch=true and set CRAWLER_OPT_FETCH_SIZE to -2147483648. Warning: this read mode locks the source table during the crawl in MySql."
+  }, {
+    "optType" : "CRAWLER_OPT_WHERE",
+    "dataType" : "STRING",
+    "customType" : false,
+    "description" : "Defines optional where statement to the source table query."
+  }, {
+    "optType" : "CUSTOM",
+    "dataType" : "STRING",
+    "customType" : true,
+    "description" : "Arbitrary configuration value that will be evaluated inside DH Executor and DH Manager."
+  }, {
+    "optType" : "OPT_DATA_FILE_LOCATION",
+    "dataType" : "STRING",
+    "customType" : false,
+    "description" : "Overrides data file location in single data file load. Available for Snowflake and BigQuery."
+  }, {
+    "optType" : "OPT_DELTA_EXTRACT",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "Toggles between DELTA_EXTRACT and FULL_EXTRACT mode."
+  }, {
+    "optType" : "OPT_FILE_COPY_OPTIONS",
+    "dataType" : "STRING",
+    "customType" : false,
+    "description" : "File Copy Options for COPY command. Currently supported in Databricks"
+  }, {
+    "optType" : "OPT_FILE_FORMAT_OPTIONS",
+    "dataType" : "STRING",
+    "customType" : false,
+    "description" : "File Format Options for COPY command."
+  }, {
+    "optType" : "OPT_HISTORIZED_BY_DATAHASH_AS_INSERT",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "Historized insert over DATAHASH."
+  }, {
+    "optType" : "OPT_HISTORIZED_WITH_SOFTDELETE_BY_DATAHASH_AS_MERGE",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "HISTORIZED INSERT with SOFTDELETE loading by DATAHASH using MERGE pattern."
+  }, {
+    "optType" : "OPT_HISTORIZED_WITH_SOFTDELETE_BY_DATAHASH_AS_OVERWRITE",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "HISTORIZED INSERT with SOFTDELETE loading by DATAHASH using OVERWRITE pattern. Available for Snowflake and Databricks."
+  }, {
+    "optType" : "OPT_HISTORIZED_WITH_SOFTDELETE_BY_DATAHASH_AS_SWAP",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "HISTORIZED INSERT with SOFTDELETE loading by DATAHASH using SWAP pattern."
+  }, {
+    "optType" : "OPT_HISTORIZED_WITH_SOFTDELETE_BY_ID_AS_MERGE",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "HISTORIZED INSERT with SOFTDELETE loading by ID using MERGE pattern."
+  }, {
+    "optType" : "OPT_HISTORIZED_WITH_SOFTDELETE_BY_ID_AS_OVERWRITE",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "HISTORIZED INSERT with SOFTDELETE loading by ID using OVERWRITE pattern. Available for Snowflake and Databricks."
+  }, {
+    "optType" : "OPT_HISTORIZED_WITH_SOFTDELETE_BY_ID_AS_SWAP",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "HISTORIZED INSERT with SOFTDELETE loading by ID using SWAP pattern."
+  }, {
+    "optType" : "OPT_INSERT_UPDATE_BY_DATAHASH_AS_MERGE",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "INSERT-UPDATE loading by DATAHASH using MERGE pattern."
+  }, {
+    "optType" : "OPT_INSERT_UPDATE_BY_DATAHASH_AS_OVERWRITE",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "INSERT-UPDATE loading by DATAHASH using OVERWRITE pattern. Available for Snowflake and Databricks."
+  }, {
+    "optType" : "OPT_INSERT_UPDATE_BY_DATAHASH_AS_SWAP",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "INSERT-UPDATE loading by DATAHASH using SWAP pattern."
+  }, {
+    "optType" : "OPT_INSERT_UPDATE_BY_ID_AS_MERGE",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "INSERT-UPDATE loading by ID using MERGE pattern."
+  }, {
+    "optType" : "OPT_INSERT_UPDATE_BY_ID_AS_OVERWRITE",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "INSERT-UPDATE loading by ID using OVERWRITE pattern. Available for Snowflake and Databricks."
+  }, {
+    "optType" : "OPT_INSERT_UPDATE_BY_ID_AS_SWAP",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "INSERT-UPDATE loading by ID using SWAP pattern."
+  }, {
+    "optType" : "OPT_INSERT_UPDATE_DELETE_BY_DATAHASH_AS_MERGE",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "INSERT-UPDATE-DELETE loading by DATAHASH using MERGE pattern."
+  }, {
+    "optType" : "OPT_INSERT_UPDATE_DELETE_BY_DATAHASH_AS_OVERWRITE",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "INSERT-UPDATE-DELETE loading by DATAHASH using OVERWRITE pattern. Available for Snowflake and Databricks."
+  }, {
+    "optType" : "OPT_INSERT_UPDATE_DELETE_BY_DATAHASH_AS_SWAP",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "INSERT-UPDATE-DELETE loading by DATAHASH using SWAP pattern."
+  }, {
+    "optType" : "OPT_INSERT_UPDATE_DELETE_BY_ID_AS_MERGE",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "INSERT-UPDATE-DELETE loading by ID using MERGE pattern."
+  }, {
+    "optType" : "OPT_INSERT_UPDATE_DELETE_BY_ID_AS_OVERWRITE",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "INSERT-UPDATE-DELETE loading by ID using OVERWRITE pattern. Available for Snowflake and Databricks."
+  }, {
+    "optType" : "OPT_INSERT_UPDATE_DELETE_BY_ID_AS_SWAP",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "INSERT-UPDATE-DELETE loading by ID using SWAP pattern."
+  }, {
+    "optType" : "OPT_LOAD_POOL",
+    "dataType" : "STRING",
+    "customType" : false,
+    "description" : "Defines custom load pool to be used during loading instead of default load pool"
+  }, {
+    "optType" : "OPT_LOCK_WAIT_TIME_IN_SECS",
+    "dataType" : "INT",
+    "customType" : false,
+    "description" : "Load will wait the given amount for lock to be released if target is locked by the lock api."
+  }, {
+    "optType" : "OPT_NOT_EXISTS_FROM",
+    "dataType" : "STRING",
+    "customType" : false,
+    "description" : "Custom override load option of FROM part for NOT EXISTS logic."
+  }, {
+    "optType" : "OPT_NOT_EXISTS_WHERE",
+    "dataType" : "STRING",
+    "customType" : false,
+    "description" : "Custom condition for NOT EXISTS logic, to optimize for example such DV loads where DV_SOURCE is used as part of the DV_ID/Business Key."
+  }, {
+    "optType" : "OPT_NUM_RUN_IDS_PER_TRANSACTION",
+    "dataType" : "INT",
+    "customType" : false,
+    "description" : "Controls how many RUN-IDs are loaded in one database transaction at a time."
+  }, {
+    "optType" : "OPT_ORDER_BY",
+    "dataType" : "STRING",
+    "customType" : false,
+    "description" : "Custom order by definition to be used to enable partial sorting of a table while loading."
+  }, {
+    "optType" : "OPT_SCAN_ONLY_THE_LATEST_BY_KEY",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "Scan only the latest occurrence of the key. By default uses DV_LOAD_TIME or SDT_STAGE_CREATE_TIME attribute type for sorting."
+  }, {
+    "optType" : "OPT_SCAN_ONLY_THE_LATEST_WITH_SOURCE_ATTRIBUTE_TYPE",
+    "dataType" : "STRING",
+    "customType" : false,
+    "description" : "Defines the technical attribute type to be used for sorting when OPT_SCAN_ONLY_THE_LATEST_BY_KEY is enabled."
+  }, {
+    "optType" : "OPT_SCD2_BY_DATAHASH_AS_MERGE",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "SCD2 loading by DATAHASH using MERGE pattern."
+  }, {
+    "optType" : "OPT_SCD2_BY_ID_AS_MERGE",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "SCD2 loading by ID using MERGE pattern."
+  }, {
+    "optType" : "OPT_SF_FILE_COPY_OPTIONS",
+    "dataType" : "STRING",
+    "customType" : false,
+    "description" : "Snowflake specific Copy Options for COPY command."
+  }, {
+    "optType" : "OPT_SKIP_DISTINCT_ONLY",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "Custom condition for a load, which disables the DISTINCT keyword generation when the option is set to true"
+  }, {
+    "optType" : "OPT_SKIP_DUPLICATE_PREVENTION",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "Toggles duplication prevention logic of load."
+  }, {
+    "optType" : "OPT_STORAGE_INTEGRATION",
+    "dataType" : "STRING",
+    "customType" : false,
+    "description" : "Defines storage integration name for Snowflake, data source for MS SQL DB and connection for BigQuery."
+  }, {
+    "optType" : "OPT_USE_RUN_IDS",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "Toggles RUN-ID logic for the Load."
+  }, {
+    "optType" : "OPT_USE_RUN_IDS_INCREMENTALLY",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "Run IDs searched only incrementally by the last run timestamp reported by the load."
+  }, {
+    "optType" : "OPT_USE_TIMESLOT_LOGIC",
+    "dataType" : "BOOLEAN",
+    "customType" : false,
+    "description" : "Timeslot based load optimization."
+  }, {
+    "optType" : "OPT_WHERE",
+    "dataType" : "STRING",
+    "customType" : false,
+    "description" : "Custom condition for a load, so that the DML will include it in WHERE clause (at the lowest sub-query from source table)."
+  } ],
+  "entityLoadStepTypes" : [ {
+    "stepType" : "GATEKEEPER",
+    "description" : "Step type to check can the load proceed. Should return row(s) for proceeding.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 2
+  }, {
+    "stepType" : "OVERRIDE",
+    "description" : "Step executed instead of auto-generated step(s)",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 1
+  }, {
+    "stepType" : "OVERRIDE_FILE_LOAD",
+    "description" : "Overrides file load step.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 7
+  }, {
+    "stepType" : "POST",
+    "description" : "Step executed after auto-generated step(s)",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 4
+  }, {
+    "stepType" : "PRE",
+    "description" : "Step executed before auto-generated step(s)",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 3
+  }, {
+    "stepType" : "SMOKE_BLACK",
+    "description" : "Step type for logging the test step to success/failed. When failed the step makes the load to fail also. Should NOT return row(s) for success.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 6
+  }, {
+    "stepType" : "SMOKE_GREY",
+    "description" : "Step type for only logging the test step to success/failed. Should NOT return row(s) for success.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 5
+  } ],
+  "entityLoadLanguages" : [ {
+    "languageName" : "DOCKER",
+    "description" : "Experimental step technology for running Docker images by defining a URL to ECR.",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 4
+  }, {
+    "languageName" : "PYTHON",
+    "description" : "Procedural Python/SQL technology to leverage DBMS functionalities and to integrate to cloud services.",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 2
+  }, {
+    "languageName" : "REST_API",
+    "description" : "REST API",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 5
+  }, {
+    "languageName" : "SHELL_CMD",
+    "description" : "Run Shell commands as part of Load processing.",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 3
+  }, {
+    "languageName" : "SQL",
+    "description" : "Run custom SQL logic.",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 1
+  } ],
+  "keyTypes" : [ {
+    "keyType" : "BUSINESS_KEY",
+    "description" : "Data Vault Business Key",
+    "maxOccurrenceInEntity" : 1,
+    "isDefSystemDefined" : false,
+    "isNameSystemDefined" : true,
+    "keyTypeNature" : "DATA_VAULT",
+    "prefix" : "BK_",
+    "isAscDescEnabled" : false,
+    "isIndexOptionsEnabled" : false,
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 7
+  }, {
+    "keyType" : "DISTRIBUTION_KEY",
+    "description" : "Distribution Key",
+    "maxOccurrenceInEntity" : 1,
+    "isDefSystemDefined" : false,
+    "isNameSystemDefined" : true,
+    "keyTypeNature" : "PARTITIONING",
+    "prefix" : "DISTKEY_",
+    "isAscDescEnabled" : false,
+    "isIndexOptionsEnabled" : false,
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 3
+  }, {
+    "keyType" : "DRIVING_KEY",
+    "description" : "Data Vault Driving Key",
+    "maxOccurrenceInEntity" : 1,
+    "isDefSystemDefined" : false,
+    "isNameSystemDefined" : true,
+    "keyTypeNature" : "DATA_VAULT",
+    "prefix" : "DK_",
+    "isAscDescEnabled" : false,
+    "isIndexOptionsEnabled" : false,
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 8
+  }, {
+    "keyType" : "DV_DATAHASH",
+    "description" : "DV Datahash",
+    "maxOccurrenceInEntity" : 1,
+    "isDefSystemDefined" : true,
+    "isNameSystemDefined" : true,
+    "keyTypeNature" : "DATA_VAULT",
+    "prefix" : "DATAHASH_",
+    "isAscDescEnabled" : false,
+    "isIndexOptionsEnabled" : false,
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 9
+  }, {
+    "keyType" : "DV_HASH_KEY",
+    "description" : "DV Hash Key",
+    "maxOccurrenceInEntity" : 1,
+    "isDefSystemDefined" : true,
+    "isNameSystemDefined" : true,
+    "keyTypeNature" : "DATA_VAULT",
+    "prefix" : "HK_",
+    "suffix" : "_ID",
+    "isAscDescEnabled" : false,
+    "isIndexOptionsEnabled" : false,
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 10
+  }, {
+    "keyType" : "INTERLEAVED_SORT_KEY",
+    "description" : "Interleaved Sort Key",
+    "maxOccurrenceInEntity" : 1,
+    "isDefSystemDefined" : false,
+    "isNameSystemDefined" : true,
+    "keyTypeNature" : "CLUSTERING",
+    "prefix" : "INT_SORTKEY_",
+    "isAscDescEnabled" : false,
+    "isIndexOptionsEnabled" : false,
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 2
+  }, {
+    "keyType" : "PARTITION_KEY",
+    "description" : "Partition key",
+    "maxOccurrenceInEntity" : 1,
+    "isDefSystemDefined" : false,
+    "isNameSystemDefined" : false,
+    "keyTypeNature" : "PARTITIONING",
+    "isAscDescEnabled" : false,
+    "isIndexOptionsEnabled" : false,
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 11
+  }, {
+    "keyType" : "PRIMARY_KEY",
+    "description" : "Primary Key",
+    "maxOccurrenceInEntity" : 1,
+    "isDefSystemDefined" : false,
+    "isNameSystemDefined" : true,
+    "keyTypeNature" : "CONSTRAINT",
+    "prefix" : "PK_",
+    "isAscDescEnabled" : false,
+    "isIndexOptionsEnabled" : false,
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 4
+  }, {
+    "keyType" : "SECONDARY_INDEX",
+    "description" : "Secondary Index",
+    "maxOccurrenceInEntity" : 100,
+    "isDefSystemDefined" : false,
+    "isNameSystemDefined" : false,
+    "keyTypeNature" : "SECONDARY",
+    "prefix" : "IDX_",
+    "isAscDescEnabled" : true,
+    "isIndexOptionsEnabled" : true,
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 6
+  }, {
+    "keyType" : "SORT_KEY",
+    "description" : "Sort Key",
+    "maxOccurrenceInEntity" : 1,
+    "isDefSystemDefined" : false,
+    "isNameSystemDefined" : true,
+    "keyTypeNature" : "CLUSTERING",
+    "prefix" : "SORTKEY_",
+    "isAscDescEnabled" : false,
+    "isIndexOptionsEnabled" : false,
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 1
+  }, {
+    "keyType" : "UNIQUE_KEY",
+    "description" : "Unique Key",
+    "maxOccurrenceInEntity" : 100,
+    "isDefSystemDefined" : false,
+    "isNameSystemDefined" : false,
+    "keyTypeNature" : "CONSTRAINT",
+    "prefix" : "U_",
+    "isAscDescEnabled" : false,
+    "isIndexOptionsEnabled" : false,
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 5
+  } ],
+  "loadOptionPerLoadTypes" : [ {
+    "loadOptType" : "CRAWLER_OPT_DELTA_COLUMN",
+    "loadType" : "CRAWLER_EXTRACT",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 4
+  }, {
+    "loadOptType" : "CRAWLER_OPT_DELTA_COLUMN_TYPE",
+    "loadType" : "CRAWLER_EXTRACT",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 5
+  }, {
+    "loadOptType" : "CRAWLER_OPT_DELTA_DAYS",
+    "loadType" : "CRAWLER_EXTRACT",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 6
+  }, {
+    "loadOptType" : "CRAWLER_OPT_DELTA_LOGIC_TOLERATE_FUTURE_TIMESTAMPS",
+    "loadType" : "CRAWLER_EXTRACT",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 7
+  }, {
+    "loadOptType" : "CRAWLER_OPT_EXTRACT_FIELDS",
+    "loadType" : "CRAWLER_EXTRACT",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 1
+  }, {
+    "loadOptType" : "CRAWLER_OPT_FETCH_SIZE",
+    "loadType" : "CRAWLER_EXTRACT",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 3
+  }, {
+    "loadOptType" : "CRAWLER_OPT_GENERATE_LOAD",
+    "loadType" : "CRAWLER_EXTRACT",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 11
+  }, {
+    "loadOptType" : "CRAWLER_OPT_MAX_FILES_IN_MANIFEST",
+    "loadType" : "CRAWLER_EXTRACT",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 9
+  }, {
+    "loadOptType" : "CRAWLER_OPT_MAX_ROWS_IN_FILE",
+    "loadType" : "CRAWLER_EXTRACT",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 8
+  }, {
+    "loadOptType" : "CRAWLER_OPT_RETRIES",
+    "loadType" : "CRAWLER_EXTRACT",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 12
+  }, {
+    "loadOptType" : "CRAWLER_OPT_USE_FORWARD_ONLY_CONCUR_READ_ONLY_STATEMENT",
+    "loadType" : "CRAWLER_EXTRACT",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 10
+  }, {
+    "loadOptType" : "CRAWLER_OPT_WHERE",
+    "loadType" : "CRAWLER_EXTRACT",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 2
+  }, {
+    "loadOptType" : "CUSTOM",
+    "loadType" : "CRAWLER_EXTRACT",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 14
+  }, {
+    "loadOptType" : "OPT_LOAD_POOL",
+    "loadType" : "CRAWLER_EXTRACT",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 13
+  }, {
+    "loadOptType" : "CUSTOM",
+    "loadType" : "LOAD_FILE",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 5
+  }, {
+    "loadOptType" : "OPT_DATA_FILE_LOCATION",
+    "loadType" : "LOAD_FILE",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 6
+  }, {
+    "loadOptType" : "OPT_FILE_FORMAT_OPTIONS",
+    "loadType" : "LOAD_FILE",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 1
+  }, {
+    "loadOptType" : "OPT_LOAD_POOL",
+    "loadType" : "LOAD_FILE",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 4
+  }, {
+    "loadOptType" : "OPT_LOCK_WAIT_TIME_IN_SECS",
+    "loadType" : "LOAD_FILE",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 3
+  }, {
+    "loadOptType" : "OPT_SF_FILE_COPY_OPTIONS",
+    "loadType" : "LOAD_FILE",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 2
+  }, {
+    "loadOptType" : "OPT_STORAGE_INTEGRATION",
+    "loadType" : "LOAD_FILE",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 7
+  }, {
+    "loadOptType" : "OPT_USE_RUN_IDS_INCREMENTALLY",
+    "loadType" : "LOAD_FILE",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 1
+  }, {
+    "loadOptType" : "CUSTOM",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 36
+  }, {
+    "loadOptType" : "OPT_DELTA_EXTRACT",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 7
+  }, {
+    "loadOptType" : "OPT_HISTORIZED_BY_DATAHASH_AS_INSERT",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 24
+  }, {
+    "loadOptType" : "OPT_HISTORIZED_WITH_SOFTDELETE_BY_DATAHASH_AS_MERGE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 33
+  }, {
+    "loadOptType" : "OPT_HISTORIZED_WITH_SOFTDELETE_BY_DATAHASH_AS_OVERWRITE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 31
+  }, {
+    "loadOptType" : "OPT_HISTORIZED_WITH_SOFTDELETE_BY_DATAHASH_AS_SWAP",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 29
+  }, {
+    "loadOptType" : "OPT_HISTORIZED_WITH_SOFTDELETE_BY_ID_AS_MERGE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 32
+  }, {
+    "loadOptType" : "OPT_HISTORIZED_WITH_SOFTDELETE_BY_ID_AS_OVERWRITE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 30
+  }, {
+    "loadOptType" : "OPT_HISTORIZED_WITH_SOFTDELETE_BY_ID_AS_SWAP",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 28
+  }, {
+    "loadOptType" : "OPT_INSERT_UPDATE_BY_DATAHASH_AS_MERGE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 21
+  }, {
+    "loadOptType" : "OPT_INSERT_UPDATE_BY_DATAHASH_AS_OVERWRITE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 17
+  }, {
+    "loadOptType" : "OPT_INSERT_UPDATE_BY_DATAHASH_AS_SWAP",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 13
+  }, {
+    "loadOptType" : "OPT_INSERT_UPDATE_BY_ID_AS_MERGE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 20
+  }, {
+    "loadOptType" : "OPT_INSERT_UPDATE_BY_ID_AS_OVERWRITE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 16
+  }, {
+    "loadOptType" : "OPT_INSERT_UPDATE_BY_ID_AS_SWAP",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 12
+  }, {
+    "loadOptType" : "OPT_INSERT_UPDATE_DELETE_BY_DATAHASH_AS_MERGE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 23
+  }, {
+    "loadOptType" : "OPT_INSERT_UPDATE_DELETE_BY_DATAHASH_AS_OVERWRITE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 19
+  }, {
+    "loadOptType" : "OPT_INSERT_UPDATE_DELETE_BY_DATAHASH_AS_SWAP",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 15
+  }, {
+    "loadOptType" : "OPT_INSERT_UPDATE_DELETE_BY_ID_AS_MERGE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 22
+  }, {
+    "loadOptType" : "OPT_INSERT_UPDATE_DELETE_BY_ID_AS_OVERWRITE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 18
+  }, {
+    "loadOptType" : "OPT_INSERT_UPDATE_DELETE_BY_ID_AS_SWAP",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 14
+  }, {
+    "loadOptType" : "OPT_LOAD_POOL",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 11
+  }, {
+    "loadOptType" : "OPT_LOCK_WAIT_TIME_IN_SECS",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 10
+  }, {
+    "loadOptType" : "OPT_NOT_EXISTS_FROM",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 9
+  }, {
+    "loadOptType" : "OPT_NOT_EXISTS_WHERE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 8
+  }, {
+    "loadOptType" : "OPT_NUM_RUN_IDS_PER_TRANSACTION",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 2
+  }, {
+    "loadOptType" : "OPT_ORDER_BY",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 4
+  }, {
+    "loadOptType" : "OPT_SCAN_ONLY_THE_LATEST_BY_KEY",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 26
+  }, {
+    "loadOptType" : "OPT_SCAN_ONLY_THE_LATEST_WITH_SOURCE_ATTRIBUTE_TYPE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 27
+  }, {
+    "loadOptType" : "OPT_SCD2_BY_DATAHASH_AS_MERGE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 35
+  }, {
+    "loadOptType" : "OPT_SCD2_BY_ID_AS_MERGE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : false,
+    "ordinalPositionInDesigner" : 34
+  }, {
+    "loadOptType" : "OPT_SKIP_DISTINCT_ONLY",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 6
+  }, {
+    "loadOptType" : "OPT_SKIP_DUPLICATE_PREVENTION",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 5
+  }, {
+    "loadOptType" : "OPT_USE_RUN_IDS",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 1
+  }, {
+    "loadOptType" : "OPT_USE_RUN_IDS_INCREMENTALLY",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 1
+  }, {
+    "loadOptType" : "OPT_USE_TIMESLOT_LOGIC",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 25
+  }, {
+    "loadOptType" : "OPT_WHERE",
+    "loadType" : "TRANSFORM_PERSIST",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 3
+  }, {
+    "loadOptType" : "CUSTOM",
+    "loadType" : "TRANSFORM_SQL_VIEW",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 6
+  }, {
+    "loadOptType" : "OPT_LOAD_POOL",
+    "loadType" : "TRANSFORM_SQL_VIEW",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 5
+  }, {
+    "loadOptType" : "OPT_ORDER_BY",
+    "loadType" : "TRANSFORM_SQL_VIEW",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 2
+  }, {
+    "loadOptType" : "OPT_SKIP_DISTINCT_ONLY",
+    "loadType" : "TRANSFORM_SQL_VIEW",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 4
+  }, {
+    "loadOptType" : "OPT_SKIP_DUPLICATE_PREVENTION",
+    "loadType" : "TRANSFORM_SQL_VIEW",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 3
+  }, {
+    "loadOptType" : "OPT_WHERE",
+    "loadType" : "TRANSFORM_SQL_VIEW",
+    "isShownInDesigner" : true,
+    "ordinalPositionInDesigner" : 1
+  } ]
+}
